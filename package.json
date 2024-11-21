@@ -1,15 +1,9 @@
 {
   "name": "@minko-fe/style-object-to-string",
-  "type": "module",
-  "packageManager": "pnpm@9.7.1",
   "version": "1.0.0",
+  "packageManager": "pnpm@9.7.1",
   "description": "✨ convert style object to string. eg. { fontSize: 12 } => font-size: 12px",
-  "author": "hemengke <https://github.com/hemengke1997>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hemengke1997/style-object-to-string.git"
-  },
+  "type": "module",
   "keywords": [
     "style to string",
     "object style to string",
@@ -18,6 +12,18 @@
     "css object to to string",
     "object css to string"
   ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemengke1997/style-object-to-string.git"
+  },
+  "author": "hemengke <https://github.com/hemengke1997>",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -25,20 +31,13 @@
       "import": "./dist/index.js"
     }
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
     "test": "vitest",
     "lint": "eslint . --fix",
-    "up": "pnpm update --i --L",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "bump": "bumpp package.json -c -p -t --all -x \"pnpm run changelog\""
+    "bump": "bumpp package.json -c --no-push -t --all -x \"npm run changelog\""
   },
   "dependencies": {
     "csstype": "^3.1.3"

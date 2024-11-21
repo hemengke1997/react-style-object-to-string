@@ -1,5 +1,6 @@
 import type * as CSS from 'csstype'
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface CSSProperties extends CSS.Properties<string | number> {}
 
 // https://github.com/facebook/react/blob/HEAD/packages/react-dom-bindings/src/shared/hyphenateStyleName.js#L26
@@ -28,7 +29,7 @@ function willCoercionThrow(value): boolean {
   try {
     testStringCoercion(value)
     return false
-  } catch (e) {
+  } catch {
     return true
   }
 }
