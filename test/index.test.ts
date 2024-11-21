@@ -23,4 +23,8 @@ describe('style-object-to-string', () => {
   test('should keep unit', () => {
     expect(styleObjectToString({ fontSize: '14rem' })).toBe('font-size:14rem')
   })
+
+  test('should add important', () => {
+    expect(styleObjectToString({ fontSize: '14px !important' })).toBe('font-size:14px !important')
+  })
 })

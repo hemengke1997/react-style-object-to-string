@@ -1,6 +1,7 @@
 {
   "name": "@minko-fe/style-object-to-string",
   "type": "module",
+  "packageManager": "pnpm@9.7.1",
   "version": "0.0.3",
   "description": "✨ convert style object to string. eg. { fontSize: 12 } => font-size: 12px",
   "author": "hemengke <https://github.com/hemengke1997>",
@@ -40,18 +41,18 @@
     "bump": "bumpp package.json -c -p -t --all -x \"pnpm run changelog\""
   },
   "dependencies": {
-    "csstype": "^3.1.1"
+    "csstype": "^3.1.3"
   },
   "devDependencies": {
-    "@minko-fe/commitlint-config": "^1.2.23",
-    "@minko-fe/eslint-config": "^1.2.23",
-    "@minko-fe/prettier-config": "^1.2.23",
-    "@minko-fe/tsconfig": "^1.2.23",
-    "bumpp": "^9.0.0",
-    "conventional-changelog-cli": "^2.2.2",
-    "eslint": "^8.36.0",
-    "tsup": "^6.6.3",
-    "typescript": "^4.9.5",
-    "vitest": "^0.29.2"
+    "@minko-fe/commitlint-config": "^2.1.2",
+    "@minko-fe/eslint-config": "^4.1.1",
+    "@minko-fe/prettier-config": "^2.2.3",
+    "@minko-fe/tsconfig": "^2.1.1",
+    "bumpp": "^9.8.1",
+    "conventional-changelog-cli": "^5.0.0",
+    "eslint": "^9.15.0",
+    "tsup": "8.3.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
   }
 }
