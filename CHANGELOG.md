@@ -1,3 +1,12 @@
+# [1.0.0](https://github.com/hemengke1997/style-object-to-string/compare/v0.0.3...v1.0.0) (2024-11-21)
+
+
+### Features
+
+* 1.0.0 ([7955185](https://github.com/hemengke1997/style-object-to-string/commit/7955185c6f9efc33865f8a81c0e66f1950080b50))
+
+
+
 ## [0.0.3](https://github.com/hemengke1997/style-object-to-string/compare/v0.0.2...v0.0.3) (2023-03-31)
 
 
